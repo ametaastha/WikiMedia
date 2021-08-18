@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9NM-eH-izT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="MediaWikis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QhF-Um-YP0">
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BVE-ky-gG2">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3vj-Cm-DKu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7i1-MQ-m5p"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QhF-Um-YP0" secondAttribute="bottom" constant="10" id="8dP-FE-6v8"/>
+                            <constraint firstItem="QhF-Um-YP0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="G5A-Bf-ze2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QhF-Um-YP0" secondAttribute="trailing" constant="10" id="iMk-SU-P3m"/>
+                            <constraint firstItem="QhF-Um-YP0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jbv-5Y-VM4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BSQ-vk-dF3"/>
+                    <connections>
+                        <outlet property="wikiImagesCollectionView" destination="QhF-Um-YP0" id="7Kw-VV-LPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.72463768115949" y="75.669642857142847"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="fIV-la-dhM">
+            <objects>
+                <viewController storyboardIdentifier="ImageVC" id="t7J-7S-RKF" customClass="ImageViewController" customModule="MediaWikis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drt-Oh-BJL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ak-o5-qQr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WXz-S0-DRf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ak-o5-qQr" firstAttribute="top" secondItem="WXz-S0-DRf" secondAttribute="top" id="D1h-13-OvA"/>
+                            <constraint firstItem="9Ak-o5-qQr" firstAttribute="leading" secondItem="WXz-S0-DRf" secondAttribute="leading" id="r2s-lQ-g6K"/>
+                            <constraint firstItem="WXz-S0-DRf" firstAttribute="bottom" secondItem="9Ak-o5-qQr" secondAttribute="bottom" id="r6w-dt-uXF"/>
+                            <constraint firstItem="WXz-S0-DRf" firstAttribute="trailing" secondItem="9Ak-o5-qQr" secondAttribute="trailing" id="wUR-re-7hu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailedImageView" destination="9Ak-o5-qQr" id="QsH-Cp-HnZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yvc-sN-J9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702.8985507246377" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z9v-Cm-LOb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9NM-eH-izT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OZR-cd-WMC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pIO-tt-5OT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8R-vE-yHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

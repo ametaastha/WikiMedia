@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6D4C48B8-7209-4915-9538-66938C687918"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D8042D5-099A-4B48-A557-8387EAD1FCA1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediaWikis/Controller/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "searchBar(_:textDidChange:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D8042D5-099A-4B48-A557-8387EAD1FCA1 - 1d5132b78504af04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediaWikis.SearchViewController.searchBar(_: __C.UISearchBar, textDidChange: Swift.String) -&gt; ()"
+                  moduleName = "MediaWikis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vamsi/Downloads/MediaWikis%203/MediaWikis/Controller/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "2794">
+               </Location>
+               <Location
+                  uuid = "5D8042D5-099A-4B48-A557-8387EAD1FCA1 - 1d5132b78504af04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediaWikis.SearchViewController.searchBar(_: __C.UISearchBar, textDidChange: Swift.String) -&gt; ()"
+                  moduleName = "MediaWikis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vamsi/Downloads/MediaWikis%203/MediaWikis/Controller/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "3797">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD65AC23-AF3A-4722-B4C3-742624BD1F36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediaWikis/Controller/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
